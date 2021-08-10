@@ -244,11 +244,11 @@ struct security_priv {
 #endif /* DBG_SW_SEC_CNT */
 };
 
-/*struct sha256_state {
+struct sha256_state {
 	u64 length;
 	u32 state[8], curlen;
 	u8 buf[64];
-};*/
+};
 
 #define GET_ENCRY_ALGO(psecuritypriv, psta, encry_algo, bmcst)\
 	do {\
